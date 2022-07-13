@@ -1,0 +1,245 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+h1 {
+  font-size: 3rem;
+  color: $grey;
+}
+h2 {
+  font-size: 2.5rem;
+  color: skyblue;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 0.5rem;
+}
+
+body {
+  font-family: $font;
+  line-height: 1.5;
+  background-color: $white;
+}
+.container {
+  max-width: 1260px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+header {
+  padding: 0.9rem 0;
+}
+.top-menu a {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1rem;
+  color: $blue;
+  padding: 1rem 1.4rem;
+}
+
+.top-menu a:hover,
+.top-menu a.active {
+  color: $pink;
+}
+a {
+  text-decoration: none;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: $aqua;
+}
+.hero {
+  padding: 3rem 0;
+}
+.social a {
+  color: black;
+  font-size: 1rem;
+  background-color: $aqua;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0.4rem;
+  &:hover {
+    background-color: $pink;
+  }
+}
+.padding {
+  padding: 0.5rem;
+}
+.padding-1 {
+  padding: 1rem 0;
+}
+.padding-2 {
+  padding: 2rem 0;
+}
+.image {
+  display: flex;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1rem;
+  color: $blue;
+  overflow: auto;
+  padding: 2rem 1rem;
+  img {
+    width: 25%;
+    border-radius: 0.6rem;
+  }
+}
+.width-100 {
+  width: 100%;
+}
+
+/* About Page */
+.about-main {
+  background-color: aliceblue;
+  line-height: 1.5;
+}
+.about {
+  padding: 3rem 0;
+}
+.about-text {
+  font-size: 2rem;
+  color: skyblue;
+}
+
+/* Projects Page */
+.projects {
+  padding: 3rem 0;
+}
+.resume {
+  padding-top: 0;
+  margin-top: 0;
+}
+.pro-cards {
+  padding: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+}
+.pro-card {
+  width: 400px;
+  height: 150px;
+  text-align: center;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: ghostwhite;
+  border: 1px solid black;
+  color: black;
+}
+.got-app {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: cadetblue;
+  color: black;
+  border: 1px solid;
+  display: block;
+  &:hover {
+    background-color: $white;
+    border: 1px solid grey;
+  }
+}
+.head {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 800;
+  color: black;
+}
+.info {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 700;
+  color: gray;
+}
+
+.project-main {
+  width: 400px;
+}
+.text-center {
+  text-align: center;
+}
+.projects-img {
+  display: flex;
+  overflow: auto;
+  padding: 4rem 1.5rem;
+  gap: 2rem;
+  img {
+    width: 40%;
+    border-radius: 0.6rem;
+    transition: 0.5s ease-in-out;
+    &:hover {
+      box-shadow: 1px 0px 8px 3px rgba($color: $grey, $alpha: 1);
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  }
+}
+
+/* Contact Page */
+.contact {
+  padding: 3rem 0;
+}
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+  gap: 1.5rem;
+}
+
+.icon {
+  text-align: center;
+  background-color: $grey;
+  width: 18rem;
+  height: 12rem;
+  padding: 2rem 1rem;
+  display: inline-block;
+  transition: 0.5s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+  a {
+    font-size: 3.5rem;
+    color: $crimson;
+  }
+}
+
+/* Footer */
+footer {
+  margin-left: 2rem;
+}
+footer small {
+  color: black;
+}
+footer span {
+  margin-left: 0.6rem;
+  color: crimson;
+  font-weight: 500;
+}
+.center {
+  text-align: center;
+}
